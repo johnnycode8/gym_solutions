@@ -1,0 +1,7 @@
+__pycache__
+logs
+models
+frozen_lake8x8.pkl
+frozen_lake8x8.png
+frozen_lake_dql.png
+frozen_lake_dql.pt
