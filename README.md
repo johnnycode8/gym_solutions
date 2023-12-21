@@ -2,7 +2,7 @@
 
 <h3 align="center">Gymnasium Reinforcement Learning Solutions</h3>
 
-Collection of Python code that solves Reinforcement Learning environments from the [Gymnasium Library](https://gymnasium.farama.org/), formerly OpenAI’s Gym library. Each solution has a companion video explanation and code walkthrough from my YouTube channel [@johnnycode](https://www.youtube.com/@johnnycode). If the code and video helped you, please consider:
+Collection of Python code that solves Reinforcement Learning environments from the [Gymnasium Library](https://gymnasium.farama.org/), formerly OpenAI’s Gym library. Each solution has a companion video explanation and code walkthrough from my YouTube channel [@johnnycode](https://www.youtube.com/@johnnycode). If the code and video helped you, please consider:  
 <a href='https://www.buymeacoffee.com/johnnycode'><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 ## Installation
@@ -11,7 +11,9 @@ The [Gymnasium Library](https://gymnasium.farama.org/) is supported on Linux and
 * ERROR: Command swig.exe failed
 * ERROR: Microsoft Visual C++ 14.0 or greater is required.
 
-I have been developing successfully on Windows. If you encounter these errors, check out my Gymnasium on Windows installation guide:
+I have been developing successfully on Windows. If you encounter these errors, check out my Gymnasium on Windows installation guide.
+
+##### Video Tutorial:
 <a href='https://youtu.be/gMgj4pSHLww'><img src='https://img.youtube.com/vi/gMgj4pSHLww/0.jpg' width='400' alt='Install Gymnasium on Windows'/></a>
 
 
