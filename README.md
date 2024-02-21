@@ -1,8 +1,8 @@
 <a name="readme-top"></a>
 
-<h3 align="center">Gymnasium Reinforcement Learning Solutions</h3>
+<h2 align="center">Gymnasium (Deep) Reinforcement Learning Tutorials</h2>
 
-Collection of Python code that solves Reinforcement Learning environments from the [Gymnasium Library](https://gymnasium.farama.org/), formerly OpenAI’s Gym library. Each solution has a companion video explanation and code walkthrough from my YouTube channel [@johnnycode](https://www.youtube.com/@johnnycode). If the code and video helped you, please consider:  
+Collection of Python code that solves/trains Reinforcement Learning environments from the [Gymnasium Library](https://gymnasium.farama.org/), formerly OpenAI’s Gym library. Each solution has a companion video explanation and code walkthrough from my YouTube channel [@johnnycode](https://www.youtube.com/@johnnycode). If the code and video helped you, please consider:  
 <a href='https://www.buymeacoffee.com/johnnycode'><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 ## Installation
@@ -16,19 +16,7 @@ My Gymnasium on Windows installation video shows you how to resolve these errors
 ##### YouTube Tutorial:
 <a href='https://youtu.be/gMgj4pSHLww'><img src='https://img.youtube.com/vi/gMgj4pSHLww/0.jpg' width='400' alt='Install Gymnasium on Windows'/></a>
 
-
-## Deep Q-Learning
-(Beginners should start with Q-Learning first, scroll down). This Deep Reinforcement Learning tutorial explains how the Deep Q-Learning (DQL) algorithm uses two neural networks: a Policy Deep Q-Network (DQN) and a Target DQN, to solve the [FrozenLake-v1](https://gymnasium.farama.org/environments/toy_text/frozen_lake/) 4x4 environment. The Frozen Lake environment is very simple and straightforward, allowing us to focus on how DQL works. The Epsilon-Greedy algorithm and the Experience Replay technique are also used as part of DQL to help train the learning agent. The code referenced here is also walked through in the YouTube tutorial. PyTorch is used to build the DQNs.
-
-##### Code Reference:
-* [frozen_lake_dql.py](https://github.com/johnnycode8/gym_solutions/blob/main/frozen_lake_dql.py)
-
-##### Dependencies:
-* <a href='https://pytorch.org/'>PyTorch</a>
-
-##### YouTube Tutorial:
-<a href='https://youtu.be/EUrWGTCGzlA'><img src='https://img.youtube.com/vi/EUrWGTCGzlA/0.jpg' width='400' alt='Deep Q-Learning DQL/DQN Explained + Code Walkthru + Demo'/></a>
-
+# Beginner Reinforcement Learning Tutorials
 
 ## Q-Learning - Frozen Lake 8x8
 This is the recommended starting point for beginners. This Q-Learning tutorial walks through the code on how to solve the [FrozenLake-v1](https://gymnasium.farama.org/environments/toy_text/frozen_lake/) 8x8 map. The Frozen Lake environment is very simple and straightforward, allowing us to focus on how Q-Learning works. The Epsilon-Greedy algorithm is also used in conjunction with Q-Learning. Note that this tutorial does not explain the theory or math behind Q-Learning. 
@@ -86,5 +74,33 @@ This Stable Baselines3 tutorial solves the [Humanoid-v4](https://gymnasium.faram
 
 ##### YouTube Tutorial:
 <a href='https://youtu.be/OqvXHi_QtT0'><img src='https://img.youtube.com/vi/OqvXHi_QtT0/0.jpg' width='400' alt='Solves the Humanoid-v4 with StableBaseline 3'/></a>
+
+
+# Deep Reinforcement Learning Tutorials
+## Deep Q-Learning (DQL) Explained - Part 1
+This Deep Reinforcement Learning tutorial explains how the Deep Q-Learning (DQL) algorithm uses two neural networks: a Policy Deep Q-Network (DQN) and a Target DQN, to train the [FrozenLake-v1](https://gymnasium.farama.org/environments/toy_text/frozen_lake/) 4x4 environment. The Frozen Lake environment is very simple and straightforward, allowing us to focus on how DQL works. The Epsilon-Greedy algorithm and the Experience Replay technique are also used as part of DQL to help train the learning agent. The code referenced here is also walked through in the YouTube tutorial. PyTorch is used to build the DQNs.
+
+##### Code Reference:
+* [frozen_lake_dql.py](https://github.com/johnnycode8/gym_solutions/blob/main/frozen_lake_dql.py)
+
+##### Dependencies:
+* <a href='https://pytorch.org/'>PyTorch</a>
+
+##### YouTube Tutorial:
+<a href='https://youtu.be/EUrWGTCGzlA'><img src='https://img.youtube.com/vi/EUrWGTCGzlA/0.jpg' width='400' alt='Deep Q-Learning DQL/DQN Explained + Code Walkthru + Demo'/></a>
+
+
+## DQL Explained - Part 2: Convolutional Neural Networks
+In Part 1 (above), the Deep Q-Networks (DQN) used were straightforward neural networks with a hidden layer and an output layer. This network architecture works for simple environments. However, for complex environments—such as Atari Pong—where the agent learns from the environment visually, we need to modify our DQNs with convolutional layers. We'll continue the explanation on the very simple [FrozenLake-v1](https://gymnasium.farama.org/environments/toy_text/frozen_lake/) 4x4 environment, however, we'll modify the inputs such that they are treated as images.
+
+##### Code Reference:
+* [frozen_lake_dql_cnn.py](https://github.com/johnnycode8/gym_solutions/blob/main/frozen_lake_dql_cnn.py)
+
+##### Dependencies:
+* <a href='https://pytorch.org/'>PyTorch</a>
+
+##### YouTube Tutorial:
+<a href='https://youtu.be/qKePPepISiA'><img src='https://img.youtube.com/vi/qKePPepISiA/0.jpg' width='400' alt='Deep Q-Learning with Convolutional Neural Networks'/></a>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
