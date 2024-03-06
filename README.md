@@ -77,6 +77,16 @@ This Stable Baselines3 tutorial solves the [Humanoid-v4](https://gymnasium.faram
 
 
 # Deep Reinforcement Learning Tutorials
+
+## Work Thru the Most Basic Neural Network with Simplified Math and Python
+Before diving into Deep Reinforcement Learning, it would be helpful to have a basic understanding of Neural Networks. This hands-on end-to-end example of the most basic Neural Network can give you that understanding.
+
+##### Code Reference:
+* [Basic Neural Network](https://github.com/johnnycode8/basic_neural_network) repo
+
+##### YouTube Tutorial:
+<a href='https://youtu.be/6kOvmZDEMdc'><img src='https://img.youtube.com/vi/6kOvmZDEMdc/0.jpg' width='400' alt='Work Thru the Most Basic Neural Network with Simplified Math and Python'/></a>
+
 ## Deep Q-Learning (DQL) Explained - Part 1
 This Deep Reinforcement Learning tutorial explains how the Deep Q-Learning (DQL) algorithm uses two neural networks: a Policy Deep Q-Network (DQN) and a Target DQN, to train the [FrozenLake-v1](https://gymnasium.farama.org/environments/toy_text/frozen_lake/) 4x4 environment. The Frozen Lake environment is very simple and straightforward, allowing us to focus on how DQL works. The Epsilon-Greedy algorithm and the Experience Replay technique are also used as part of DQL to help train the learning agent. The code referenced here is also walked through in the YouTube tutorial. PyTorch is used to build the DQNs.
 
