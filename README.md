@@ -63,14 +63,14 @@ This Q-Learning tutorial solves the [CartPole-v1](https://gymnasium.farama.org/e
 <a href='https://youtu.be/2u1REHeHMrg'><img src='https://img.youtube.com/vi/2u1REHeHMrg/0.jpg' width='400' alt='Solves the CartPole-v1 with Q-Learning'/></a>
 
 
-## StableBaseline 3
-This Stable Baselines3 tutorial solves the [Humanoid-v4](https://gymnasium.farama.org/environments/mujoco/humanoid/) MuJoCo environment with the Soft Actor-Critic (SAC) algorithm. The focus is on the usage of the Stable Baselines3 library rather than the SAC algorithm. Other algorithms used in the demo include Twin Delayed Deep Deterministic Policy Gradient (TD3) and Advantage Actor Critic (A2C).
+## Stable BaselineS3 - Get Started Guide
+Get started with the Stable Baselines3 Reinforcement Learning library by training the [Humanoid-v4](https://gymnasium.farama.org/environments/mujoco/humanoid/) MuJoCo environment with the Soft Actor-Critic (SAC) algorithm. The focus is on the usage of the Stable Baselines3 library and the use of TensorBoard to monitor training progress. Other algorithms used in the demo include Twin Delayed Deep Deterministic Policy Gradient (TD3) and Advantage Actor Critic (A2C).
 
 ##### Code Reference:
 * [sb3.py](https://github.com/johnnycode8/gym_solutions/blob/main/sb3.py) 
 
 ##### Dependency:
-* [Stable Baseline3](https://stable-baselines3.readthedocs.io/en/master/)
+* [Stable Baselines3](https://stable-baselines3.readthedocs.io/en/master/)
 
 ##### YouTube Tutorial:
 <a href='https://youtu.be/OqvXHi_QtT0'><img src='https://img.youtube.com/vi/OqvXHi_QtT0/0.jpg' width='400' alt='Solves the Humanoid-v4 with StableBaseline 3'/></a>
