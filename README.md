@@ -63,7 +63,7 @@ This Q-Learning tutorial solves the [CartPole-v1](https://gymnasium.farama.org/e
 <a href='https://youtu.be/2u1REHeHMrg'><img src='https://img.youtube.com/vi/2u1REHeHMrg/0.jpg' width='400' alt='Solves the CartPole-v1 with Q-Learning'/></a>
 
 
-## Stable BaselineS3 - Get Started Guide
+## Stable Baselines3 - Get Started Guide
 Get started with the Stable Baselines3 Reinforcement Learning library by training the [Humanoid-v4](https://gymnasium.farama.org/environments/mujoco/humanoid/) MuJoCo environment with the Soft Actor-Critic (SAC) algorithm. The focus is on the usage of the Stable Baselines3 library and the use of TensorBoard to monitor training progress. Other algorithms used in the demo include Twin Delayed Deep Deterministic Policy Gradient (TD3) and Advantage Actor Critic (A2C).
 
 ##### Code Reference:
