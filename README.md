@@ -43,7 +43,7 @@ This is the FrozenLake-v1 environment overlayed with Q values. You do not need t
 <a href='https://youtu.be/1W_LOB-0IEY'><img src='https://img.youtube.com/vi/1W_LOB-0IEY/0.jpg' width='400' alt='See Q-Learning in Realtime on FrozenLake-v1'/></a>
 
 
-## Q-Learning - Mountain Car
+## Q-Learning - Mountain Car - Continuous Observation Space
 This Q-Learning tutorial solves the [MountainCar-v0](https://gymnasium.farama.org/environments/classic_control/mountain_car/) environment. It builds upon the code from the Frozen Lake environment. What is interesting about this environment is that the observation space is continuous, whereas the Frozen Lake environment's observation space is discrete. "Discrete" means that the agent, the elf in Frozen Lake, steps from one cell on the grid to the next, so there is a clear distinction that the agent is going from one state to another. "Continuous" means that the agent, the car in Mountain Car, traverses the mountain on a continuous road, with no clear distinction of states.
 
 ##### Code Reference:
@@ -53,8 +53,8 @@ This Q-Learning tutorial solves the [MountainCar-v0](https://gymnasium.farama.or
 <a href='https://youtu.be/_SWnNhM5w-g'><img src='https://img.youtube.com/vi/_SWnNhM5w-g/0.jpg' width='400' alt='Solves the MountainCar-v0 with Q-Learning'/></a>
 
 
-## Q-Learning - Cart Pole
-This Q-Learning tutorial solves the [CartPole-v1](https://gymnasium.farama.org/environments/classic_control/cart_pole/) environment. It builds upon the code from the Frozen Lake environment. Like Mountain Car, the Cart Pole environment's observation space is also continuous. However, it has a more complicated observation space, including the cart's position and velocity, as well as the pole's angle and angular velocity.
+## Q-Learning - Cart Pole - Multiple Continuous Observation Spaces
+This Q-Learning tutorial solves the [CartPole-v1](https://gymnasium.farama.org/environments/classic_control/cart_pole/) environment. It builds upon the code from the Frozen Lake environment. Like Mountain Car, the Cart Pole environment's observation space is also continuous. However, it has a more complicated continuous observation space: the cart's position and velocity and the pole's angle and angular velocity.
 
 ##### Code Reference:
 * [cartpole_q.py](https://github.com/johnnycode8/gym_solutions/blob/main/cartpole_q.py) 
