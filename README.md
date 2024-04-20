@@ -87,7 +87,7 @@ Before diving into Deep Reinforcement Learning, it would be helpful to have a ba
 ##### YouTube Tutorial:
 <a href='https://youtu.be/6kOvmZDEMdc&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/6kOvmZDEMdc/0.jpg' width='400' alt='Work Thru the Most Basic Neural Network with Simplified Math and Python'/></a>
 
-## Deep Q-Learning (DQL) Explained - Part 1
+## Deep Q-Learning (DQL) Explained
 This Deep Reinforcement Learning tutorial explains how the Deep Q-Learning (DQL) algorithm uses two neural networks: a Policy Deep Q-Network (DQN) and a Target DQN, to train the [FrozenLake-v1](https://gymnasium.farama.org/environments/toy_text/frozen_lake/) 4x4 environment. The Frozen Lake environment is very simple and straightforward, allowing us to focus on how DQL works. The Epsilon-Greedy algorithm and the Experience Replay technique are also used as part of DQL to help train the learning agent. The code referenced here is also walked through in the YouTube tutorial. PyTorch is used to build the DQNs.
 
 ##### Code Reference:
@@ -99,9 +99,20 @@ This Deep Reinforcement Learning tutorial explains how the Deep Q-Learning (DQL)
 ##### YouTube Tutorial:
 <a href='https://youtu.be/EUrWGTCGzlA&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/EUrWGTCGzlA/0.jpg' width='400' alt='Deep Q-Learning DQL/DQN Explained + Code Walkthru + Demo'/></a>
 
+## DQN on Gymnasium Mountain Car
+We've already solve [MountainCar-v0](https://gymnasium.farama.org/environments/classic_control/mountain_car/ with Q-Learning (above). For learning purposes, we'll do it again with Deep Q-Learning. Hopefully, it'll give you a better understanding on how to adapt the code for your needs.
 
-## DQL Explained - Part 2: Convolutional Neural Networks
-In Part 1 (above), the Deep Q-Networks (DQN) used were straightforward neural networks with a hidden layer and an output layer. This network architecture works for simple environments. However, for complex environments—such as Atari Pong—where the agent learns from the environment visually, we need to modify our DQNs with convolutional layers. We'll continue the explanation on the very simple [FrozenLake-v1](https://gymnasium.farama.org/environments/toy_text/frozen_lake/) 4x4 environment, however, we'll modify the inputs such that they are treated as images.
+##### Code Reference:
+* [mountain_car_dql.py](https://github.com/johnnycode8/gym_solutions/blob/main/mountain_car_dql.py)
+
+##### Dependencies:
+* <a href='https://pytorch.org/'>PyTorch</a>
+
+##### YouTube Tutorial:
+<a href='https://youtu.be/oceguqZxjn4&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/oceguqZxjn4/0.jpg' width='400' alt='Deep Q-Learning on MountainCar-V0'/></a>
+
+## DQL Explained - Convolutional Neural Networks
+In part 1 (above), the Deep Q-Networks (DQN) used were straightforward neural networks with a hidden layer and an output layer. This network architecture works for simple environments. However, for complex environments—such as Atari Pong—where the agent learns from the environment visually, we need to modify our DQNs with convolutional layers. We'll continue the explanation on the very simple [FrozenLake-v1](https://gymnasium.farama.org/environments/toy_text/frozen_lake/) 4x4 environment, however, we'll modify the inputs such that they are treated as images.
 
 ##### Code Reference:
 * [frozen_lake_dql_cnn.py](https://github.com/johnnycode8/gym_solutions/blob/main/frozen_lake_dql_cnn.py)
@@ -111,6 +122,9 @@ In Part 1 (above), the Deep Q-Networks (DQN) used were straightforward neural ne
 
 ##### YouTube Tutorial:
 <a href='https://youtu.be/qKePPepISiA&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/qKePPepISiA/0.jpg' width='400' alt='Deep Q-Learning with Convolutional Neural Networks'/></a>
+
+
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
