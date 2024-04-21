@@ -113,7 +113,7 @@ YouTube Tutorial Content:
 <a href='https://youtu.be/EUrWGTCGzlA&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/EUrWGTCGzlA/0.jpg' width='400' alt='Deep Q-Learning DQL/DQN Explained + Code Walkthru + Demo'/></a>
 
 ## DQN on Gymnasium Mountain Car
-We've already solve [MountainCar-v0](https://gymnasium.farama.org/environments/classic_control/mountain_car/ with Q-Learning (above). For learning purposes, we'll do it again with Deep Q-Learning. Hopefully, it'll give you a better understanding on how to adapt the code for your needs.
+We've already solve [MountainCar-v0](https://gymnasium.farama.org/environments/classic_control/mountain_car/) with Q-Learning (above). For learning purposes, we'll do it again with Deep Q-Learning. Hopefully, it'll give you a better understanding on how to adapt the code for your needs.
 
 ##### Code Reference:
 * [mountain_car_dql.py](https://github.com/johnnycode8/gym_solutions/blob/main/mountain_car_dql.py)
