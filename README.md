@@ -90,6 +90,19 @@ Before diving into Deep Reinforcement Learning, it would be helpful to have a ba
 ## Deep Q-Learning (DQL) Explained
 This Deep Reinforcement Learning tutorial explains how the Deep Q-Learning (DQL) algorithm uses two neural networks: a Policy Deep Q-Network (DQN) and a Target DQN, to train the [FrozenLake-v1](https://gymnasium.farama.org/environments/toy_text/frozen_lake/) 4x4 environment. The Frozen Lake environment is very simple and straightforward, allowing us to focus on how DQL works. The Epsilon-Greedy algorithm and the Experience Replay technique are also used as part of DQL to help train the learning agent. The code referenced here is also walked through in the YouTube tutorial. PyTorch is used to build the DQNs.
 
+YouTube Tutorial Content:
+* Quick overview of the Frozen Lake environment.
+* Why use Reinforcement Learning on Frozen Lake, if a simple search algorithm works.
+* Overview of the Epsilon-Greedy algorithm.
+* Compare Q-Learning's Q-Table vs Deep Q-Learning's DQN
+* How the Q-Table learns.
+* How the DQN learns.
+* Overview of Experience Replay.
+* Putting it all together - walkthru of the Deep Q-Learning algorithm.
+* Walkthru of the Deep Q-Learning code for Frozen Lake.
+* Run and demo the training code.
+
+
 ##### Code Reference:
 * [frozen_lake_dql.py](https://github.com/johnnycode8/gym_solutions/blob/main/frozen_lake_dql.py)
 
