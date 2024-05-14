@@ -140,8 +140,8 @@ In part 1 (above), the Deep Q-Networks (DQN) used were straightforward neural ne
 <br /><br />
 
 # Stable Baselines3 Tutorials
-## SB3 Part 1 - Get Started Guide
-Get started with the Stable Baselines3 Reinforcement Learning library by training the [Humanoid-v4](https://gymnasium.farama.org/environments/mujoco/humanoid/) MuJoCo environment with the Soft Actor-Critic (SAC) algorithm. The focus is on the usage of the Stable Baselines3 library and the use of TensorBoard to monitor training progress. Other algorithms used in the demo include Twin Delayed Deep Deterministic Policy Gradient (TD3) and Advantage Actor Critic (A2C).
+## Stable Baselines3: Get Started Guide | Train Gymnasium MuJoCo Humanoid-v4
+Get started with the Stable Baselines3 Reinforcement Learning library by training the Gymnasium MuJoCo [Humanoid-v4](https://gymnasium.farama.org/environments/mujoco/humanoid/) environment with the Soft Actor-Critic (SAC) algorithm. The focus is on the usage of the Stable Baselines3 (SB3) library and the use of TensorBoard to monitor training progress. Other algorithms used in the demo include Twin Delayed Deep Deterministic Policy Gradient (TD3) and Advantage Actor Critic (A2C).
 
 ##### Code Reference:
 * [sb3.py](https://github.com/johnnycode8/gym_solutions/blob/main/sb3.py) 
@@ -154,7 +154,14 @@ Get started with the Stable Baselines3 Reinforcement Learning library by trainin
 
 <br />
 
-## SB3 Part 2 - Dynamically Load RL Algorithm & Train Gym Pendulum
+## Stable Baselines3 - Beginner's Guide to Choosing RL Algorithms for Training
+SB3 offers many ready-to-use RL algorithms out of the box, but as beginners, how do we know which algorithms to use? We'll discuss this topic in the video:
+
+<a href='https://youtu.be/2AFl-iWGQzc&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/2AFl-iWGQzc/0.jpg' width='400' alt='Beginners Guide on Choosing Stable Baselines3 Algorithms for Training'/></a>
+
+<br />
+
+## Stable Baselines3: Dynamically Load RL Algorithm for Training | Train Gymnasium Pendulum
 In part 1, for simplicity, the algorithms (SAC, TD3, 2C) were hardcoded in the code. In part 2, we'll make loading and creating instances of the algorithms dynamic. To test the changes, we'll train [Pendulum-v1](https://gymnasium.farama.org/environments/classic_control/pendulum/) using SAC and TD3 simultaneously and monitor the progress thru TensorBoard.
 
 ##### Code Reference:
@@ -165,11 +172,13 @@ In part 1, for simplicity, the algorithms (SAC, TD3, 2C) were hardcoded in the c
 
 <br />
 
-## Stable Baselines3 - Beginner's Guide to Choosing RL Algorithms for Training
-SB3 offers many ready-to-use RL algorithms out of the box, but as beginners, how do we know which algorithms to use? We'll discuss this topic in the video:
+## Stable Baselines3: Auto Stop Training When Best Model is Found | Train Gym Bipedal Walker
+This tutorial walks thru the code that automatically stop training when the best model is found. We'll demonstrate by training the Gymnasium [BipedalWalker-v3](https://gymnasium.farama.org/environments/box2d/bipedal_walker/) using Soft-Actor Critic.
 
-<a href='https://youtu.be/2AFl-iWGQzc&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/2AFl-iWGQzc/0.jpg' width='400' alt='Beginners Guide on Choosing Stable Baselines3 Algorithms for Training'/></a>
+##### Code Reference:
+* [sb3v3.py](https://github.com/johnnycode8/gym_solutions/blob/main/sb3v3.py) 
 
-
+##### YouTube Tutorial:
+<a href='https://youtu.be/mCkgLweyMqo&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/mCkgLweyMqo/0.jpg' width='400' alt='Train Gymnasium BipedalWalker-v3 with Stable Baselines3'/></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
