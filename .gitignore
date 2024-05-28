@@ -1,11 +1,6 @@
 __pycache__
-logs
-models
-frozen_lake8x8.pkl
-frozen_lake8x8.png
-frozen_lake_dql.png
-frozen_lake_dql.pt
-frozen_lake_dql_cnn.png
-frozen_lake_dql_cnn.pt
-mountaincar_dql.png
-mountaincar_dql*.pt
+/logs
+/models
+/*.pkl
+/*.png
+/*.pt
