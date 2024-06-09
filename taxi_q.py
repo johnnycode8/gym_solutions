@@ -8,7 +8,7 @@ def run(episodes, is_training=True, render=False):
     env = gym.make('Taxi-v3', render_mode='human' if render else None)
 
     if(is_training):
-        q = np.zeros((env.observation_space.n, env.action_space.n)) # init a 64 x 4 array
+        q = np.zeros((env.observation_space.n, env.action_space.n)) # init a 500 x 6 array
     else:
         f = open('taxi.pkl', 'rb')
         q = pickle.load(f)
@@ -27,6 +27,7 @@ def run(episodes, is_training=True, render=False):
         terminated = False      # True when fall in hole or reached goal
         truncated = False       # True when actions > 200
 
+        rewards = 0
         while(not terminated and not truncated):
             if is_training and rng.random() < epsilon:
                 action = env.action_space.sample() # actions: 0=left,1=down,2=right,3=up
@@ -34,6 +35,8 @@ def run(episodes, is_training=True, render=False):
                 action = np.argmax(q[state,:])
 
             new_state,reward,terminated,truncated,_ = env.step(action)
+
+            rewards += reward
 
             if is_training:
                 q[state,action] = q[state,action] + learning_rate_a * (
@@ -47,8 +50,8 @@ def run(episodes, is_training=True, render=False):
         if(epsilon==0):
             learning_rate_a = 0.0001
 
-        if reward == 1:
-            rewards_per_episode[i] = 1
+
+        rewards_per_episode[i] = rewards
 
     env.close()
 
@@ -64,6 +67,6 @@ def run(episodes, is_training=True, render=False):
         f.close()
 
 if __name__ == '__main__':
-    # run(15000)
+    run(15000)
 
     run(10, is_training=False, render=True)
