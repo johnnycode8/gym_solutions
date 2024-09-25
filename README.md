@@ -2,7 +2,7 @@
 
 <h1 align="center">Gymnasium (Deep) Reinforcement Learning Tutorials</h1>
 
-This repository contains a collection of Python code that solves/trains Reinforcement Learning environments from the [Gymnasium Library](https://gymnasium.farama.org/), formerly OpenAI’s Gym library. Each solution is accompanied by a video tutorial on my YouTube channel, [@johnnycode](https://www.youtube.com/@johnnycode), containing explanations and code walkthroughs. If you find the code and tutorials helpful, please consider supporting my work:  
+This repository contains a collection of Python code that solves/trains Reinforcement Learning environments from the [Gymnasium Library](https://gymnasium.farama.org/), formerly OpenAI’s Gym library. Each solution is accompanied by a video tutorial on my YouTube channel, [@johnnycode](https://www.youtube.com/@johnnycode), containing explanations and code walkthroughs. If you find the code and tutorials helpful, please consider supporting my work:
 <a href='https://www.buymeacoffee.com/johnnycode'><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 # Installation
@@ -24,51 +24,87 @@ However, due to the constantly evolving nature of software versions, you might s
 
 ## Beginner Reinforcement Learning Tutorials
 
-### Q-Learning - Frozen Lake 8x8
+### 1. Q-Learning on Gymnasium FrozenLake-v1 (8x8 Tiles)
 This is the recommended starting point for beginners. This Q-Learning tutorial provides a step-by-step walkthrough of the code to solve the [FrozenLake-v1](https://gymnasium.farama.org/environments/toy_text/frozen_lake/) 8x8 map. The Frozen Lake environment is simple and straightforward, allowing us to concentrate on understanding how Q-Learning works. The Epsilon-Greedy algorithm is used for both exploration (choosing random actions) and exploitation (choosing the best actions). Please note that this tutorial does not delve into the theory or math behind Q-Learning; it is purely focused on practical application.
 
 <a href='https://youtu.be/ZhoIgo3qqLU&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/ZhoIgo3qqLU/0.jpg' width='400' alt='How to Train Gymnasium FrozenLake-v1 with Q-Learning'/></a>
 
 ##### Code Reference:
-* [frozen_lake_q.py](https://github.com/johnnycode8/gym_solutions/blob/main/frozen_lake_q.py) 
+* [frozen_lake_q.py](https://github.com/johnnycode8/gym_solutions/blob/main/frozen_lake_q.py)
 
-### Q-Learning - Frozen Lake 8x8 Enhanced
+### Watch Q-Learning Values Change During Training on Gymnasium FrozenLake-v1
 This is the [FrozenLake-v1](https://gymnasium.farama.org/environments/toy_text/frozen_lake/) environment "enhanced" to help you better understand Q-Learning. The Q-values are overlaid on top of each cell of the map, allowing you to visually see the Q-values update in real-time during training. The map is enlarged to fill the entire screen, making the overlaid Q-values easier to read. Additionally, shortcut keys are available to speed up or slow down the animation.
 
 <a href='https://youtu.be/1W_LOB-0IEY&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/1W_LOB-0IEY/0.jpg' width='400' alt='See Q-Learning in Realtime on FrozenLake-v1'/></a>
 
 ##### Code Reference:
-* [frozen_lake_enhanced.py](https://github.com/johnnycode8/gym_solutions/blob/main/frozen_lake_enhanced.py)  
+* [frozen_lake_enhanced.py](https://github.com/johnnycode8/gym_solutions/blob/main/frozen_lake_enhanced.py)
 This is the FrozenLake-v1 environment overlayed with Q values. You do not need to understand this code, but feel free to check how I modified the environment.
-* [frozen_lake_qe.py](https://github.com/johnnycode8/gym_solutions/blob/main/frozen_lake_qe.py)  
-This file is almost identical to the frozen_lake_q.py file above, except this uses the frozen_lake_enhanced.py environment. 
+* [frozen_lake_qe.py](https://github.com/johnnycode8/gym_solutions/blob/main/frozen_lake_qe.py)
+This file is almost identical to the frozen_lake_q.py file above, except this uses the frozen_lake_enhanced.py environment.
 
-### Q-Learning on Taxi (Multidimensional Discrete Space)
+### 2. Q-Learning on Gymnasium Taxi-v3 (Multiple Objectives)
 In the [Taxi-V3](https://gymnasium.farama.org/environments/toy_text/taxi/) environment, the agent (Taxi) learns to pick up passengers and deliver them to their destination. It is very much similar to the Frozen Lake environment, except that the observation space is more complicated.
 
 <a href='https://youtu.be/9fAnzZ6xzhA&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/9fAnzZ6xzhA/0.jpg' width='400' alt='How to Train Gymnasium Taxi-v3 Q-Learning'/></a>
 
 ##### Code Reference:
-* [taxi_q.py](https://github.com/johnnycode8/gym_solutions/blob/main/taxi_q.py) 
+* [taxi_q.py](https://github.com/johnnycode8/gym_solutions/blob/main/taxi_q.py)
 
 
-### Q-Learning on Mountain Car (Continuous Observation Space)
+### 3. Q-Learning on Gymnasium MountainCar-v0 (Continuous Observation Space)
 This Q-Learning tutorial solves the [MountainCar-v0](https://gymnasium.farama.org/environments/classic_control/mountain_car/) environment. It builds upon the code from the Frozen Lake environment. What is interesting about this environment is that the observation space is continuous, whereas the Frozen Lake environment's observation space is discrete. "Discrete" means that the agent, the elf in Frozen Lake, steps from one cell on the grid to the next, so there is a clear distinction that the agent is going from one state to another. "Continuous" means that the agent, the car in Mountain Car, traverses the mountain on a continuous road, with no clear distinction of states.
 
 <a href='https://youtu.be/_SWnNhM5w-g&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/_SWnNhM5w-g/0.jpg' width='400' alt='How to Train Gymnasium MountainCar-v0 with Q-Learning'/></a>
 
 ##### Code Reference:
-* [mountain_car_q.py](https://github.com/johnnycode8/gym_solutions/blob/main/mountain_car_q.py) 
+* [mountain_car_q.py](https://github.com/johnnycode8/gym_solutions/blob/main/mountain_car_q.py)
 
-### Q-Learning on Cart Pole (Multiple Continuous Observation Spaces)
+### 4. Q-Learning on Gymnasium CartPole-v1 (Multiple Continuous Observation Spaces)
 This Q-Learning tutorial solves the [CartPole-v1](https://gymnasium.farama.org/environments/classic_control/cart_pole/) environment. It builds upon the code from the Frozen Lake environment. Like Mountain Car, the Cart Pole environment's observation space is also continuous. However, it has a more complicated continuous observation space: the cart's position and velocity and the pole's angle and angular velocity.
 
 <a href='https://youtu.be/2u1REHeHMrg&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/2u1REHeHMrg/0.jpg' width='400' alt='How to Train Gymnasium CartPole-v1 with Q-Learning'/></a>
 
 ##### Code Reference:
-* [cartpole_q.py](https://github.com/johnnycode8/gym_solutions/blob/main/cartpole_q.py) 
+* [cartpole_q.py](https://github.com/johnnycode8/gym_solutions/blob/main/cartpole_q.py)
+
+
+### 5. Q-Learning on Gymnasium Acrobot-v1 (High Dimension Q-Table)
+We'll use a 7-dimension Q-Table to solve the [Acrobot-v1](https://gymnasium.farama.org/environments/classic_control/acrobot/) environment.
+
+<a href='https://youtu.be/Pf1lEv3b5s4&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/Pf1lEv3b5s4/0.jpg' width='400' alt='How to Train Gymnasium Acrobot-v1 with Q-Learning'/></a>
+
+##### Code Reference:
+* [acrobot_q.py](https://github.com/johnnycode8/gym_solutions/blob/main/acrobot_q.py)
+
+
+<br />
+
+
+### 6. Q-Learning on Gymnasium Pendulum-v1 (Continuous Action and Observation Spaces)
+We'll use Q-Learning to solve the [Pendulum-v1](https://gymnasium.farama.org/environments/classic_control/pendulum/) environment.
+
+<a href='https://youtu.be/o2NMWV5sImM&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/o2NMWV5sImM/0.jpg' width='400' alt='How to Train Gymnasium Pendulum-v1 with Q-Learning'/></a>
+
+##### Code Reference:
+* [pendulum_q.py](https://github.com/johnnycode8/gym_solutions/blob/main/pendulum_q.py)
+
+
+<br />
+
+
+### 7. Q-Learning on Gymnasium MountainCarContinuous-v0 (Stuck in Local Optima)
+We'll use Q-Learning to solve the [MountainCarContinuous-v0](https://gymnasium.farama.org/environments/classic_control/mountain_car_continuous/) environment.
+
+<a href='https://youtu.be/1Ms2UqRC8LA&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/1Ms2UqRC8LA/0.jpg' width='400' alt='How to Train Gymnasium MountainCarContinuous-v0 with Q-Learning'/></a>
+
+##### Code Reference:
+* [mountain_car_cont_q.py](https://github.com/johnnycode8/gym_solutions/blob/main/mountain_car_cont_q.py)
+
 
 <br /><br />
+
+
 
 ## Deep Reinforcement Learning Tutorials
 
@@ -141,7 +177,7 @@ Get started with the Stable Baselines3 Reinforcement Learning library by trainin
 <a href='https://youtu.be/OqvXHi_QtT0&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/OqvXHi_QtT0/0.jpg' width='400' alt='How to Train Gymnasium Humanoid-v4 with Stable Baselines3'/></a>
 
 ##### Code Reference:
-* [sb3.py](https://github.com/johnnycode8/gym_solutions/blob/main/sb3.py) 
+* [sb3.py](https://github.com/johnnycode8/gym_solutions/blob/main/sb3.py)
 
 ##### Dependency:
 * [Stable Baselines3](https://stable-baselines3.readthedocs.io/en/master/)
@@ -161,7 +197,7 @@ In part 1, for simplicity, the algorithms (SAC, TD3, 2C) were hardcoded in the c
 <a href='https://youtu.be/nf2IE2GEJ-s&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/nf2IE2GEJ-s/0.jpg' width='400' alt='How to Train Gymnasium Pendulum-v1 with Stable Baselines3'/></a>
 
 ##### Code Reference:
-* [sb3v2.py](https://github.com/johnnycode8/gym_solutions/blob/main/sb3v2.py) 
+* [sb3v2.py](https://github.com/johnnycode8/gym_solutions/blob/main/sb3v2.py)
 
 <br />
 
@@ -171,7 +207,7 @@ This tutorial walks thru the code that automatically stop training when the best
 <a href='https://youtu.be/mCkgLweyMqo&list=PL58zEckBH8fCt_lYkmayZoR9XfDCW9hte'><img src='https://img.youtube.com/vi/mCkgLweyMqo/0.jpg' width='400' alt='How to Train Gymnasium BipedalWalker-v3 with Stable Baselines3'/></a>
 
 ##### Code Reference:
-* [sb3v3.py](https://github.com/johnnycode8/gym_solutions/blob/main/sb3v3.py) 
+* [sb3v3.py](https://github.com/johnnycode8/gym_solutions/blob/main/sb3v3.py)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
