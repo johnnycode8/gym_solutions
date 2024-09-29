@@ -3,15 +3,19 @@
 <h1 align="center">Gymnasium (Deep) Reinforcement Learning Tutorials</h1>
 
 This repository contains a collection of Python code that solves/trains Reinforcement Learning environments from the [Gymnasium Library](https://gymnasium.farama.org/), formerly OpenAI’s Gym library. Each solution is accompanied by a video tutorial on my YouTube channel, [@johnnycode](https://www.youtube.com/@johnnycode), containing explanations and code walkthroughs. If you find the code and tutorials helpful, please consider supporting my work:
+
 <a href='https://www.buymeacoffee.com/johnnycode'><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
+<br />
+
 # Train Atari Games <!-- omit from toc -->
-If you want to jump straight into training AI agents to play Atari games, this tutorial requires no coding and no reinforcement learning experience! We use RL Baselines3 Zoo, a powerful training framework that lets you train and test AI models easily through the command line interface.
+If you want to jump straight into training AI agents to play Atari games, this tutorial requires no coding and no reinforcement learning experience! We use RL Baselines3 Zoo, a powerful training framework that lets you train and test AI models easily through a command line interface.
 
 <a href='https://youtu.be/aQsaH7Tzvp0'><img src='https://img.youtube.com/vi/aQsaH7Tzvp0/0.jpg' width='400' alt='Full Guide: Easiest Way to Train AI to Play Atari Games with Deep Reinforcement Learning'/></a>
 
 <br />
 
+If you want to learn Reinforcement Learning:
 - [Installation](#installation)
 - [Beginner Reinforcement Learning Tutorials](#beginner-reinforcement-learning-tutorials)
     - [1. Q-Learning on Gymnasium FrozenLake-v1 (8x8 Tiles)](#1-q-learning-on-gymnasium-frozenlake-v1-8x8-tiles)
